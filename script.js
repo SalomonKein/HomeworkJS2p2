@@ -1,12 +1,17 @@
-let m = +prompt('Введіть просте число "m"', ' ');
-let n = +prompt('Введіть просте число "n", "n">"m"', ' ');
+let m = +prompt('Введіть число "m"', ' ');
+let n = +prompt('Введіть число "n", "n">"m"', ' ');
 
-do {
+
+while (n < m || (!Number.isInteger(m)) || (!Number.isInteger(n))) {
     console.log('error');
-    m = +prompt('Введіть просте число "m"', ' ');
-    n = +prompt('Введіть просте число "n", "n">"m"', ' ');
+    m = +prompt('Введіть число "m"', ' ');
+    n = +prompt('Введіть число "n", "n">"m"', ' ');
+
 }
-while (n < m || (!Number.isInteger(m)) || (!Number.isInteger(m)))
+
+
+
+
 let i;
 nextStep2:
     for (m; m <= n; m++) {
